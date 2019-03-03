@@ -1,0 +1,19 @@
+{
+  "name": "sisterworks-donation",
+  "version": "1.0.0",
+  "description": "app to donate to SisterWorks",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Ben Gelbard",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "nodemon": "^1.18.10",
+    "serve-favicon": "^2.5.0",
+    "stripe": "^6.25.1"
+  }
+}

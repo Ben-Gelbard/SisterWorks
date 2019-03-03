@@ -1,0 +1,72 @@
+<section>
+    <div class="row">
+                    <div class="text-center">
+                        <div class="video">
+                <video width="100%"controls controlsList="nodownload" autoplay>
+                    <source src="/videos/video-crop_1.mp4" type="video/mp4">
+                    <source src="/videos/video-crop_1.ogg" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                </video>
+                <a href="#donations" class="scale" style="font-size:30px; color: black; text-decoration:none">↓</a>
+   <div class="container">
+             <a NAME="donations"><p class="lead">In March, we will celebrate International Women’s Day through a <strong>#WorkEmpowersWomen</strong> fundraising campaign to support migrant, asylum seeker and refugee women to reach their full potential.
+             <br><br>
+             <strong>Where the money goes</strong></p>
+
+            <br>
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            {{!-- <img src="/img/meta-chart.png" alt="funds-usage-data" width="50%"> --}}
+
+            <br>
+
+           <strong class="charity" style="color:#000000">Donations of $2 or more to SisterWorks are tax deductible in Australia</strong>
+           <br><br>
+
+           {{!-- <img src="/img/Registered-Charity-blk.png" alt="Registered-Charity-Badge" width="7%"> --}}
+                                   
+<script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
+<a class="dbox-donation-button" href="https://donorbox.org/sisterworks-donation?amount=10" style="background:#ff5c5c; color: #fff;text-decoration: none; width:200px; font-family: Verdana,sans-serif;display: inline-block;font-size: 16px;padding: 15px 38px 15px 38px;" >Donate</a>
+                    </div></a>
+                    
+
+<footer style="padding-top:30px">
+   <a NAME="footer">
+           <nav width="100%" class="navbar" style="background: #F2EFEF">
+               <div class="container">
+               <p class="text-center" style="text-align: center; font-size:13px">SisterWorks supports women to become independent by helping them gain access to social support and employment opportunities so that they are able to support themselves financially. We support women promoting and developing social entrepreneurship. </p>
+</div>
+   </nav>
+   </a> 
+       
+
+</footer>
+        </div>   
+              </div>      
+                      </div>
+
+                      <script>
+window.onload = function() {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	data: [{
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "##0\"%\"",
+		indexLabel: "{label} {y}",
+		dataPoints: [
+			{y: 7, label: "Fundraising", color: "#111617"},
+			{y: 20, label: "Marketing", color: "#ED1C24"},
+			{y: 18, label: "Operations", color: "#783117"},
+			{y: 12, label: "Social Support", color: "#CAB35D"},
+			{y: 43, label: "Training & Projects", color: "#F59997"}
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+
+</section>
