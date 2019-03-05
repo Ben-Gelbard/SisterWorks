@@ -29,6 +29,10 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/success', (req, res) => {
+    res.render('success')
+})
+
 // Charge Route
 // app.post('/charge', (req, res) => {
 //     const amount = donation_amount;
