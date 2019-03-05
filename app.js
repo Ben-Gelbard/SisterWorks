@@ -29,23 +29,6 @@ app.get('/', (req, res) => {
     });
 });
 
-// Charge Route
-app.post('/charge', (req, res) => {
-    const amount = donation_amount;
-    stripe.customers.create({
-        amount: donation_amount,
-        email: req.body.stripeEmail,
-        source: req.body.stripeToken
-    })
-    .then(customer => stripe.charges.create({
-        amount,
-        description: "SisterWorks Donation",
-        currency: 'aud',
-        customer: customer.id,
-    }))
-    .then(charge => res.render('success'));
-});
-
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
